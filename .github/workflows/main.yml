@@ -8,6 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Build OpenWRT
     steps:
+    - uses: actions/setup-node@v4
     - name: Install dependencies
       run: |
         sudo apt update
